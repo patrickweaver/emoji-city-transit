@@ -1,2 +1,3 @@
-# emoji-city-transit
-A NYC Transit Dashboard that shows status with emoji
+# Emoji City Tranist
+
+A subway dashboard that shows train statuses using emoji.

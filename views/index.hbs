@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Emoji City Transit</title>
+    <meta name="description" content="NYC Subway Status in Emojis">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/4fbc3853-89e1-48aa-9fad-8c92515df019%2Fmetro_1f687.png?v=1563400815694" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Social -->
+    <meta property="og:title" content="Emoji City Transit"/>
+    <meta property="og:description" content="See how the subway will make you feel today, in emoji! Made by Patrick Weaver, patrickweaver.net" />
+    <meta property="og:image" content="https://cdn.glitch.com/4fbc3853-89e1-48aa-9fad-8c92515df019%2FScreen%20Shot%202019-07-17%20at%206.15.26%20PM.png?v=1563401795293" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@patrickweave_r" />
+    <meta name="twitter:title" content="Emoji City Transit" />
+    <meta name="twitter:description" content="See how the subway will make you feel today, in emoji! Made by Patrick Weaver, patrickweaver.net" />
+    <!-- Needs to be exactly a 2:1 ratio for Twitter, recommend 800 x 400 px -->
+    <meta name="twitter:image" content="https://cdn.glitch.com/4fbc3853-89e1-48aa-9fad-8c92515df019%2FScreen%20Shot%202019-07-17%20at%206.15.26%20PM.png?v=1563401795293" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+  </head>
+  <body>
+    
+    <h1>
+      🚇 NYC Subway Status 🚇
+    </h1>
+    <h3>
+      <em>How will the subway make you feel today?</em>
+    </h3>
+    
+    <ul id="lines">
+    {{#each lines }}
+    
+    
+      <li class="line-li"><span class="line-label" style="background-color: {{ hex }}; color: {{ color }}; border: 10px solid {{ hex }}">{{ name }}</span><span class="emoji">{{ emoji }}</span></li>
+    
+    
+    {{/each }}
+    </ul>
+    
+    <div id="key">
+      <h2>
+        Key:
+      </h2>
+      <ul>
+        <li>😍: Good Service!</li>
+        <li>😔: Slow Speeds</li>
+        <li>😠: Some Delays</li>
+        <li>😡: Delays</li>
+        <li>🤕: Planned Work</li>
+        <li>🧐: Express to Local</li>
+        <li>😳: Local to Express</li>
+        <li>😶: Part Suspended</li>
+        <li>🤔: Trains Rerouted</li>
+        <li>🥶: Suspended</li>
+        <li>🤯: Multiple Impacts (not crashes)</li>
+        <li>👻: No Scheduled Service</li>
+        <li>😷: Essential Service</li>
+        <li>🤫: Stations Skipped</li>
+        <li>Are there other statuses? Not sure!</li>
+      </ul>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <img src="https://pw-analytics.glitch.me/counter.png?fallback=EMOJI_CITY_TRANSIT&color=black" alt="" style="vertical-align: bottom; height: 0px; width: 0px;" aria-hidden="true"
+  </body>
+</html>
