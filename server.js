@@ -78,7 +78,10 @@ app.get('/', async function(req, res) {
         'MULTIPLE IMPACTS': '🤯',
         'NO SCHEDULED SERVICE': '👻',
         'ESSENTIAL SERVICE': '😷',
-        'STATIONS SKIPPED': '🤫'
+        'STATIONS SKIPPED': '🤫',
+        'WEEKDAY SERVICE': '🥺',
+        'WEEKEND SERVICE': '😴',
+        'CROWDING': '🥵'
       }
       
       subwayData.map(i => {
@@ -87,7 +90,7 @@ app.get('/', async function(req, res) {
       })
       
       for (var i in lines) {
-        console.log(lines[i].status);
+        console.log(i, lines[i].status);
         lines[i].emoji = statuses[lines[i].status]
       }
       
