@@ -38,7 +38,16 @@
     {{#each lines }}
     
     
-      <li class="line-li"><span class="line-label" style="background-color: {{ hex }}; color: {{ color }}; border: 10px solid {{ hex }}">{{ name }}</span><span class="emoji">{{ emoji }}</span></li>
+      <li class="line-li">
+        {{#each name}}
+          <span class="line-label" style="background-color: {{ ../hex }}; color: {{ ../color }}; border: 10px solid {{ ../hex }}">
+            <span class="line-letter">{{ this }}</span>
+          </span>
+        {{/each}}
+        <span class="emoji">
+          {{ emoji }}
+        </span>
+      </li>
     
     
     {{/each }}
@@ -66,6 +75,7 @@
         <li>🥺: Weekday Service</li>
         <li>😴: Weekend Service</li>
         <li>🥵: Crowding</li>
+        <li>🤪: Boarding Change</li>
         <li>Are there other statuses? Not sure!</li>
       </ul>
     </div>

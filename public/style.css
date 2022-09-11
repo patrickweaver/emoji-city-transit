@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: #0039A6;
+  color: #0039a6;
   text-align: center;
 }
 
@@ -19,8 +19,8 @@ h3 {
 
 #lines {
   list-style-type: none;
-  width: 120px;
-  margin: 0 140px 30px;
+  width: 240px;
+  margin: 0 80px 30px;
   padding: 0;
 }
 
@@ -34,14 +34,20 @@ h3 {
 }
 
 .line-label {
-  border-radius: 40px;
+  border-radius: 50px;
   margin-right: 10px;
+}
+
+.line-letter {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
 }
 
 #key {
   margin: 20px;
   padding: 10px;
-  background-color: #EEE;
+  background-color: #eee;
 }
 
 #key h2 {
