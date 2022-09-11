@@ -39,8 +39,8 @@
     
     
       <li class="line-li">
-        {{#each name}}
-          <span class="line-label" style="background-color: {{ ../hex }}; color: {{ ../color }}; border: 10px solid {{ ../hex }}">
+        {{#each lineNames}}
+          <span class="line-label" style="background-color: {{ ../hex }}; color: {{ ../color }}; border: 1px solid {{ ../hex }}">
             <span class="line-letter">{{ this }}</span>
           </span>
         {{/each}}

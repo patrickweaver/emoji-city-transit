@@ -17,57 +17,57 @@ app.get("/", async function (req, res) {
 
       const lines = {
         123: {
-          names: ["1", "2", "3"],
+          lineNames: ["1", "2", "3"],
           hex: "#EE352E",
           color: "white",
         },
         456: {
-          names: ["4", "5", "6"],
+          lineNames: ["4", "5", "6"],
           hex: "#00933C",
           color: "white",
         },
         7: {
-          names: ["7"],
+          lineNames: ["7"],
           hex: "#B933AD",
           color: "white",
         },
         ACE: {
-          names: ["A", "C", "E"],
+          lineNames: ["A", "C", "E"],
           hex: "#0039A6",
           color: "white",
         },
         BDFM: {
-          names: ["B", "D", "F", "M"],
+          lineNames: ["B", "D", "F", "M"],
           hex: "#FF6319",
           color: "white",
         },
         G: {
-          names: ["G"],
+          lineNames: ["G"],
           hex: "#6CBE45",
           color: "white",
         },
         JZ: {
-          names: ["J", "Z"],
+          lineNames: ["J", "Z"],
           hex: "#996633",
           color: "white",
         },
         L: {
-          names: ["L"],
+          lineNames: ["L"],
           hex: "#A7A9AC",
           color: "white",
         },
         NQR: {
-          names: ["N", "Q", "R"],
+          lineNames: ["N", "Q", "R"],
           hex: "#FCCC0A",
           color: "black",
         },
         S: {
-          names: ["S"],
+          lineNames: ["S"],
           hex: "#808183",
           color: "white",
         },
         SIR: {
-          names: ["SIR"],
+          lineNames: ["SIR"],
           hex: "#0039A6",
           color: "white",
         },

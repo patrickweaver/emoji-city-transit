@@ -19,8 +19,8 @@ h3 {
 
 #lines {
   list-style-type: none;
-  width: 240px;
-  margin: 0 80px 30px;
+  width: 260px;
+  margin: 0 70px 30px;
   padding: 0;
 }
 
@@ -34,14 +34,16 @@ h3 {
 }
 
 .line-label {
-  border-radius: 50px;
+  border-radius: 120px;
   margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  width: 42px;
 }
 
 .line-letter {
-  display: inline-block;
   height: 14px;
-  width: 14px;
+  min-width: 14px;
 }
 
 #key {
